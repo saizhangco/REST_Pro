@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "41261c40-080f-49bc-a5e2-643229229289",
+		"name": "REST_PRO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8080/restpro/strser",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"method\":\"stringClean\", \"txt\":\"abbbcdd\"}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/restpro/strser",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"restpro",
+						"strser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8080/restpro/strser",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"method\":\"maxBlock\", \"txt\":\"abbCCCddBBBxx\"}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/restpro/strser",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"restpro",
+						"strser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8080/restpro/strser",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"method\":\"reorderBlock\", \"txt\":\"bbAAccAadF\"}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/restpro/strser",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"restpro",
+						"strser"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

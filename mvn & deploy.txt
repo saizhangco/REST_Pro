@@ -1,0 +1,21 @@
+1 package using mvn tools
+
+# mvn clean package -Dmaven.test.skip=true
+
+2 Copy target/restpro.war into the Docker host machine
+3 install Tomcat container into docker
+
+# docker pull tomcat
+
+4 startup tomcat container
+
+# docker run -p 8080:8080 container
+
+4 copy restpro.war into docker tomcat container
+
+# docker cp restpro.war [container_id]:/usr/local/tomcat/webapps
+
+5 Test, use Postman to test the rest service API
+POST http://127.0.0.1:8080/restpro/strser    application/json    {"method":"stringClean", "txt":"abbbcdd"}
+POST http://127.0.0.1:8080/restpro/strser    application/json    {"method":"maxBlock", "txt":"abbCCCddBBBxx"}
+POST http://127.0.0.1:8080/restpro/strser    application/json    {"method":"reorderBlock", "txt":"bbAAccAadF"}
